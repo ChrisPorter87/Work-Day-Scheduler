@@ -70,13 +70,13 @@ textarea {
   transition: all 0.3s ease-in-out;
 }
 .past {
-  background: grey;
+  background: grey !important;
 }
 
 .future {
-  background: green;
+  background: green !important;
 }
 
 .present {
-  background: red;
+  background: red !important;
 }

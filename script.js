@@ -1,4 +1,5 @@
-var moment = moment().format("L").toString();
+var momentClass = moment();
+var moment = momentClass.format("L").toString();
 function displayDate() {
   var dateDiv = document.getElementById("currentDay");
   dateDiv.innerHTML = moment;
@@ -6,18 +7,19 @@ function displayDate() {
   dateDiv.textContent = moment;
 }
 console.log(moment);
-
-let t = new Date();
-let hour = t.getHours();
-const cols = [...document.querySelectorAll("h4")];
-cols.forEach((h) => (h.className = ""));
+var hourMoment = momentClass.format("H").toString();
+console.log("HOUR: ", hourMoment);
+//let t = new Date();
+let hour = hourMoment;
+const cols = [...document.getElementsByClassName("hour")];
+console.log("Number of Columns: ", cols);
 cols.forEach((h, i) => {
-  if (i + 9 < hour) {
-    h.className = "past";
-  } else if (i + 9 > hour) {
-    h.className = "future";
+  if (i + 8 < hour) {
+    h.className = h.className + " past";
+  } else if (i + 8 > hour) {
+    h.className = h.className + " future";
   } else {
-    h.className = "present";
+    h.className = h.className + " present";
   }
 });
 
