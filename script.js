@@ -7,6 +7,15 @@ function displayDate() {
   dateDiv.textContent = moment;
 }
 console.log(moment);
+$(".saveBtn").on("click", function () {
+  //get nearby values.
+  console.log(this);
+  var text = $(this).siblings(".description").val(); // taken the change from the sibling html description attribute
+  var time = $(this).parent().attr("id"); // taken the change from the parent html id attribute
+
+  //set items in local storage.
+  localStorage.setItem(time, text);
+});
 var hourMoment = momentClass.format("H").toString();
 console.log("HOUR: ", hourMoment);
 let hour = hourMoment;
