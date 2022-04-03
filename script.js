@@ -9,10 +9,8 @@ function displayDate() {
 console.log(moment);
 var hourMoment = momentClass.format("H").toString();
 console.log("HOUR: ", hourMoment);
-//let t = new Date();
 let hour = hourMoment;
 const cols = [...document.getElementsByClassName("hour")];
-console.log("Number of Columns: ", cols);
 cols.forEach((h, i) => {
   if (i + 8 < hour) {
     h.className = h.className + " past";
