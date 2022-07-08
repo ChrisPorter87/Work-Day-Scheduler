@@ -13,7 +13,8 @@ A daily work day scheduler to keep track of tasks and their sequence in the day
 * 
 
 ##ScreenShot
-<img width="1329" alt="Screen Shot 2022-04-03 at 7 37 25 PM" src="https://user-images.githubusercontent.com/96667529/161453859-4f17b942-d54d-425a-95dc-54a90bcfed8e.png">
+<img width="1395" alt="Screen Shot 2022-07-08 at 2 40 33 PM" src="https://user-images.githubusercontent.com/96667529/178051692-236e4dfa-a063-4821-ad85-a3ecbcde8ecc.png">
+
 
 ## Website
 https://chrisporter87.github.io/fifthassignment/
